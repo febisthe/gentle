@@ -1,0 +1,51 @@
+/* [섹션1] visual */
+.sc-visual { position: relative; width: 100%; height: 600vh; } 
+.sc-visual .sticky { position: sticky; top: 0; height: 100vh; } 
+.sc-visual .sticky .item { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; } 
+.sc-visual .item .thumb { position: absolute; top: 0; height: 100%; width: 100%; } 
+.sc-visual .item .thumb img { position: relative; z-index: 10; width: 100%; height: 100vh; object-fit: cover; clip-path: circle(0% at 50% 50%); } 
+.sc-visual .item .thumb .clip { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #f1f1f1; } 
+.sc-visual .item .info { position: relative; z-index: 10; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--gle-black); opacity: 0; visibility: hidden; color: #fff; } 
+.sc-visual .item .info .tit { font-size: 36px; font-family: 'Gentle'; margin-bottom: 20px; } 
+.sc-visual .item .info-link a:hover { text-decoration: underline; color: var(--gle-white); } 
+.sc-visual .item .info-link a:first-child { margin-right: 24px; } 
+
+
+/* [섹션2] styles */
+.sc-styles { position: relative; } 
+.sc-styles .inner { display: flex; flex-direction: column; height: 700vh; position: relative; } 
+.sc-styles .inner .headline { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; z-index: 1; width: 100%; height: 100vh; position: sticky; top: 0; mix-blend-mode: difference; } 
+.sc-styles .inner .thumb { height: 100vh; position: absolute; top: 30%; bottom: 0%; left: 0%; right: 0%; display: grid; grid-template-columns: repeat(4,1fr); } 
+.sc-styles .thumb img { filter: brightness(0.3); } 
+.sc-styles .desc { display: flex; gap: 15; flex-direction: column; margin: 0 auto; margin-top: auto; padding-bottom: 10%; text-align: center}
+
+
+/* [섹션3] glass */
+.sc-glass { height: 300vh; padding: 0 20px; } 
+.sc-glass .sticky { position: sticky; top: 0; height: 100vh; } 
+.sc-glass .swiper { padding-top: 100px; } 
+.sc-glass .swiper .desc { display: flex; flex-direction: column; gap: 5px; font-size: 13px; } 
+.sc-glass .swiper .desc .tit { font-weight: 700; margin-top: 5px; } 
+.sc-glass .pagination { padding-top: 50px; } 
+.sc-glass .swiper-pagination-bullet { width: 8px; height: 8px; border-radius: 50%; } 
+.sc-glass .swiper-pagination-bullet { background: #222; } 
+
+
+/* [섹션4] video */
+.sc-video { width: 100%; } 
+.sc-video video { width: 100%; object-fit: cover; } 
+
+
+/* 미디어쿼리 */
+@media (max-width:1024px){
+ .sc-styles .inner .thumb { grid-template-columns: repeat(3,1fr); } 
+ }
+
+@media (max-width:768px){
+ .sc-styles .inner .thumb { grid-template-columns: repeat(2,1fr); } 
+ }
+
+@media (max-width:480px){
+ .sc-styles .inner .thumb { grid-template-columns: repeat(1,1fr); } 
+ }
+

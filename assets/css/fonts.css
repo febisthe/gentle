@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR-Medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR-Bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Gentle";
+  font-weight: 400;
+  src: url("../fonts/GentleMonster.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Unica";
+  font-weight: 400;
+  src: url("../fonts/Unica-Regular.woff2") format('woff2');
+}
